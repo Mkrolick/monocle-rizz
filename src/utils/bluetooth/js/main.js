@@ -29,6 +29,7 @@ export async function ensureConnected(statusCallback, relayCallback) {
     if (error.message && error.message.includes("cancelled")) {
       return;
     }
+    alert("Error: " + error);
     statusCallback(JSON.stringify(error));
     console.error(error);
   }

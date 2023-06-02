@@ -26,9 +26,11 @@ export const app = {
   leftBtnCallback: () => {
     // navigate
     console.log("left");
+    alert("left");
   },
   rightBtnCallback: () => {
     // select
     console.log("right");
+    alert("right");
   },
 };
